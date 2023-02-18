@@ -1,0 +1,20 @@
+.profile-image{
+  max-width: 100px;
+  max-height: 100px;
+  border: 2px solid #ff408f;
+  border-radius: 50%;
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tr td {
+  padding: 10px 10px;
+  border: 1px solid #e2e2e2;
+}
+
+
+.p10{
+  padding:10px;
+}

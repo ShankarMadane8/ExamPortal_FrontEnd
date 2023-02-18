@@ -1,0 +1,105 @@
+<mat-card>
+  <mat-action-list >
+
+    <div mat-subheader style="padding-left: 20px;"><i class="fa-solid fa-bars"></i> Menu</div>
+    
+    <div>
+      <button class="sbtn" routerLink="/admin" mat-button  >
+        <mat-icon>home </mat-icon> Home  
+      </button> 
+    </div>
+
+    <div>
+      <button class="sbtn" mat-button routerLink="/admin/profile" >    
+        <mat-icon>account_circle </mat-icon>
+        <span> Profile  </span> 
+      </button>
+    </div>
+   
+    <div>
+      <button class="sbtn" mat-button routerLink="/admin/categories" >    
+        <!-- <mat-icon>add_shopping_cart </mat-icon> -->
+        <mat-icon>list </mat-icon>
+        <span> Categories  </span> 
+      </button> 
+    </div>
+
+    <div>
+      <button class="sbtn" mat-button routerLink="/admin/addCategories" >    
+        <mat-icon>add_circle_outline</mat-icon>
+        <span> Add Categories  </span> 
+      </button>
+     </div>
+      
+    <div>
+      <button class="sbtn" mat-button routerLink="/admin/quizzes" >    
+        <mat-icon>quiz</mat-icon>
+        <span>Quizzes</span> 
+      </button>
+    </div>
+  
+   <div>
+      <button class="sbtn" mat-button routerLink="/admin/addQuizzes" >    
+        <mat-icon>add</mat-icon>
+        <span>Add Quiz</span> 
+      </button>
+    </div>
+  
+   <div>
+      <button (click)="logout()" class="sbtn" mat-button routerLink="/admin/profile" >    
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span> 
+      </button>
+  
+    </div>
+
+    
+
+
+
+    <!-- <mat-list-item  > 
+      <button mat-list-item  >
+        <i class="fa-sharp fa-solid fa-house"></i> Home   
+      </button>
+     </mat-list-item > -->
+
+    <!-- 
+
+    <button mat-list-item >
+      <mat-icon mat-list-icon >home </mat-icon>
+      <span >home</span> 
+    </button>
+  
+
+    
+      <button  mat-button  >
+        <mat-icon mat-list-icon>home </mat-icon> Home  
+      </button>   
+
+         <mat-list-item  > 
+          <button mat-list-item  >
+            <mat-icon mat-list-icon>home </mat-icon> Home   
+          </button> 
+
+         </mat-list-item >
+
+        <mat-list-item > 
+          <button  mat-button  >
+            <mat-icon mat-list-icon>home </mat-icon> Home   
+          </button> 
+        </mat-list-item>
+
+        <button  mat-button> 
+          <button  mat-button  >
+            <mat-icon mat-list-icon>home </mat-icon> Home   
+          </button> 
+        </button >
+  
+      
+      -->
+
+   
+   
+
+  </mat-action-list>
+</mat-card>

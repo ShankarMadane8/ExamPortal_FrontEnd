@@ -1,0 +1,52 @@
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 offset-md-3 mt20">
+        <mat-card>
+        <mat-card-content>
+
+        <!-- ftc logo -->
+        <div class="container text-center"  >       
+          <img src="../../../assets/ftcLogo.png" alt="ftcLogo" width="80px" height="80px" 
+          class="logo">      
+        </div>
+
+        <h1 class="text-center">Login Here !!</h1>
+        
+       
+        <form (ngSubmit)="formSubmit()">
+
+          <!-- {{ loginData | json }} -->
+          
+          <!-- User Name -->
+          <mat-form-field class="full-width" appearance="outline"  >
+            <mat-label >User Name</mat-label>
+            <input [(ngModel)]="loginData.userName" required  name="userName" matInput type="text" placeholder="enter here">
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        
+          <!-- password -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label> User Password</mat-label>
+            <input [(ngModel)]="loginData.password" required  name="password" matInput type="password" placeholder="enter  here">
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+
+          <!-- buttons -->
+          <div class=" container text-center">
+            <button type="submit"  mat-raised-button color="accent">login</button>
+            <button type="button" class="ml10" mat-raised-button color="warn">Reset
+            </button>
+          </div>
+
+        </form>
+
+        </mat-card-content>
+        </mat-card>
+
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+
+<mat-card>
+  <mat-card-content>
+    <h1 class="">Add New Quiz</h1>
+    <div class="bootstrap-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 mt20">
+
+            <form (ngSubmit)="fromSubmit()" >
+
+              <!-- {{ quizzes | json }} -->
+              
+
+              <!-- Title-->
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Title</mat-label>
+                <input
+                  required  
+                  [(ngModel)]="quizzes.title"
+                  name="title"
+                  matInput
+                  type="text"
+                  placeholder="enter here"
+                />
+              </mat-form-field>
+
+              <!-- Decription -->
+
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Decription</mat-label>
+                <textarea [(ngModel)]="quizzes.description" name="description" matInput placeholder="Enter Category description" rows="5"></textarea>
+              </mat-form-field>
+
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- Max Marks-->
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Max Marks</mat-label>
+                    <input
+                     required  
+                     [(ngModel)]="quizzes.maxMarks"
+                     name="maxMarks"
+                     matInput
+                     type="number"
+                     placeholder="enter here"
+                    />
+                  </mat-form-field>
+                </div>
+
+                <div class="col-md-6">
+                  <!-- Number of Questions-->
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Number of Questions</mat-label>
+                    <input
+                    required 
+                    [(ngModel)]="quizzes.numberOfQuestions" 
+                    name="numberOfQuestions"
+                    matInput
+                    type="number"
+                    placeholder="enter here"
+                    />
+                  </mat-form-field>
+                </div>
+              </div>
+              
+
+             
+
+              
+              <!-- Active-->
+              <mat-checkbox [(ngModel)]="quizzes.active" name="active" class="example-margin">Active</mat-checkbox>
+
+              <!-- Category -->
+              <mat-form-field appearance="fill" class="full-width" appearance="outline">
+                <mat-label>Category</mat-label>
+                <mat-select [(ngModel)]="quizzes.category.cId"
+                name="category">
+                  <mat-option  class="full-width" *ngFor="let category of categories" 
+                  [value]="category.cId">
+                  {{category.title}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+             
+ 
+              
+
+              <!-- buttons -->
+              <div class="container text-center">
+                <button type="submit" mat-raised-button color="primary">
+                  Add
+                </button>
+               
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </mat-card-content>
+</mat-card>
+
+

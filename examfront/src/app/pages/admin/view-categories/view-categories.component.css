@@ -1,0 +1,29 @@
+a {
+  display: block;
+  border: red solid
+}
+mat-icon{
+  float: left;
+  margin-top: 12px;
+}
+span {
+  
+  padding-left: 35px;
+  display:block; /* to make span a block element */
+}
+p{
+  padding-left: 35px;
+  display:block; 
+}
+.ml30{
+  margin-left: 30px;
+}
+.mt10{
+  margin-top: 10px;
+
+}
+
+.ml20{
+  margin-left: 20px;
+
+}

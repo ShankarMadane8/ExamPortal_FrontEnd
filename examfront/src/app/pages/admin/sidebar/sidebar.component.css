@@ -1,0 +1,11 @@
+.sbtn:focus{
+  background-color: #e2e2e2;
+}
+
+.sbtn{
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+
+

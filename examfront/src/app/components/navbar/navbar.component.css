@@ -1,0 +1,20 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mr20{
+  margin-right: 20px;
+}
+
+.mr50{
+  margin-right: 50px;
+}
+
+
+
+.fs15{
+  font-size: 15px;
+}
+div a{
+  display: inline-block;
+}
